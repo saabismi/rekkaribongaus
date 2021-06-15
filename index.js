@@ -3,12 +3,6 @@ const grid = document.getElementById("grid");
 
 let counter = 1;
 
-/*
-newDiv.innerHTML = "kakka";
-newDiv.setAttribute("id", counter);
-newDiv.setAttribute("class", "grid-item");
-grid.appendChild(newDiv);
-*/
 
 while(counter < 1000) {
     let newDiv = document.createElement("DIV");

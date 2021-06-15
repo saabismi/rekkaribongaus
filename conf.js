@@ -6,11 +6,8 @@ function addImage(number, link) {
 
     elem.style.maxWidth = "100%";
     elem.style.maxHeight = "100%";
-    //elem.style.objectFit = "fill";
 
     let elemParent = elem.parentElement;
-
-    elemParent.removeChild
 
     let textElem = document.getElementById(number + "text");
 
