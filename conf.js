@@ -1,8 +1,8 @@
-function addImage(number, link) {
+function addPlate(number) {
 
     const elem = document.getElementById(number);
 
-    elem.setAttribute("src", link);
+    elem.setAttribute("src", "http://syvis.net/rekkarit/images/" + number + ".jpg");
 
     elem.style.maxWidth = "100%";
     elem.style.maxHeight = "100%";
@@ -15,6 +15,11 @@ function addImage(number, link) {
 
 }
 
-
-addImage(1, "https://is.mediadelivery.fi/img/468/08831b5abd884a0e8f997e83e4f54bbc.jpg");
-addImage(474, "https://sites.google.com/site/anttiforsstrom/saab006.jpg");
+addPlate(1);
+addPlate(3);
+addPlate(5);
+addPlate(7);
+addPlate(16);
+addPlate(99);
+addPlate(998);
+addPlate(999);
