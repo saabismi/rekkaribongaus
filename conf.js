@@ -17,6 +17,7 @@ function addPlate(number) {
 
 addPlate(1);
 addPlate(3);
+addPlate(4);
 addPlate(5);
 addPlate(7);
 addPlate(16);
