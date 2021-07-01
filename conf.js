@@ -28,6 +28,7 @@ addPlate(5);
 addPlate(7);
 addPlate(8);
 addPlate(11);
+addPlate(12);
 addPlate(13);
 addPlate(14);
 addPlate(16);
