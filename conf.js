@@ -13,10 +13,14 @@ function addPlate(number) {
     const plateList = document.getElementById("platelist");
 
     let createPlateListItem = document.createElement("li");
+    let createPlateListLink = document.createElement("a");
     let textForPlateList = document.createTextNode(number);
 
+    createPlateListLink.setAttribute("href", "#" + number);
+
+    createPlateListLink.appendChild(createPlateListItem);
     createPlateListItem.appendChild(textForPlateList);
-    plateList.appendChild(createPlateListItem);
+    plateList.appendChild(createPlateListLink);
 
 }
 
@@ -35,6 +39,7 @@ addPlate(13);
 addPlate(14);
 addPlate(16);
 addPlate(20);
+addPlate(81);
 addPlate(99);
 addPlate(420);
 addPlate(998);
