@@ -1,28 +1,5 @@
-function addPlate(number) {
-
-    const elem = document.getElementById(number);
-
-    elem.setAttribute("src", "http://syvis.net/rekkarit/images/" + number + ".jpg");
-
-    let elemParent = elem.parentElement;
-
-    let textElem = document.getElementById(number + "text");
-
-    elemParent.removeChild(textElem);
-
-    const plateList = document.getElementById("platelist");
-
-    let createPlateListItem = document.createElement("li");
-    let createPlateListLink = document.createElement("a");
-    let textForPlateList = document.createTextNode(number);
-
-    createPlateListLink.setAttribute("href", "#" + number);
-
-    createPlateListLink.appendChild(createPlateListItem);
-    createPlateListItem.appendChild(textForPlateList);
-    plateList.appendChild(createPlateListLink);
-
-}
+// Add plates here, use the following syntax: addPlate(X); where X is the number of the plate you're adding. The plate will get added if the web server has a .jpg file with the same name
+// Each plate on its own row
 
 addPlate(1);
 addPlate(2);
@@ -42,5 +19,6 @@ addPlate(20);
 addPlate(81);
 addPlate(99);
 addPlate(420);
+addPlate(666);
 addPlate(998);
 addPlate(999);

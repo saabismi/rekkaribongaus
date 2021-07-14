@@ -1,9 +1,10 @@
+// Variable for getting the grid element for manipulation
 const grid = document.getElementById("grid");
 
-
+// A simple variable for creating the grid of 999 boxes
 let counter = 1;
 
-
+// Fill the grid with 999 boxes, each one has a number in itself, some have also a picture if it's added in conf.js
 while(counter < 1000) {
     let newDiv = document.createElement("DIV");
     let newImg = document.createElement("IMG");
@@ -16,4 +17,31 @@ while(counter < 1000) {
     newDiv.appendChild(newImg);
     grid.appendChild(newDiv);
     counter++;
+}
+
+// Function for adding a plate on the site, this handles everything as long as you have the image uploaded in the format X.jpg (note the jpg with lower case, and only jpg is allowed)
+function addPlate(number) {
+
+    const elem = document.getElementById(number);
+
+    elem.setAttribute("src", "http://207.180.196.31/rekkarit/images/" + number + ".jpg");
+
+    let elemParent = elem.parentElement;
+
+    let textElem = document.getElementById(number + "text");
+
+    elemParent.removeChild(textElem);
+
+    const plateList = document.getElementById("platelist");
+
+    let createPlateListItem = document.createElement("li");
+    let createPlateListLink = document.createElement("a");
+    let textForPlateList = document.createTextNode(number);
+
+    createPlateListLink.setAttribute("href", "#" + number);
+
+    createPlateListLink.appendChild(createPlateListItem);
+    createPlateListItem.appendChild(textForPlateList);
+    plateList.appendChild(createPlateListLink);
+
 }
