@@ -112,7 +112,7 @@ h1 a {
     }
 
     /* Make the list items about 1/3 of the parent width */
-    #platelist li {
+    #platelist a {
         width:28%;
     }
 
