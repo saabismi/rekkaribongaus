@@ -24,7 +24,7 @@ function addPlate(number) {
 
     const elem = document.getElementById(number);
 
-    elem.setAttribute("src", "http://207.180.196.31/rekkarit/images/" + number + ".jpg");
+    elem.setAttribute("src", "https://syvis.net/rekkarit/images/" + number + ".jpg");
 
     let elemParent = elem.parentElement;
 
