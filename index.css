@@ -11,6 +11,35 @@ body {
     margin:20px 50px;
 }
 
+/* My shitty old toast system, will be replaced later */
+/* Container for notifications */
+#notificationContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 0;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* Notification element */
+.notification {
+    background-color: #e2363a;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: larger;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    z-index: 1;
+    transition: 0.3s ease;
+    display: block;
+    color: #f3f3f3;
+    max-width: 300px;
+    text-align: center;
+}
+
 /* Make the header 1 not bold */
 h1 {
     font-weight: normal;
