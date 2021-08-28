@@ -1,4 +1,4 @@
-// Add plates here, use the following syntax: addPlate(X); where X is the number of the plate you're adding. The plate will get added if the web server has a .jpg file with the same name
+// Add plates here, use the following syntax: addPlate(X); where X is the number of the plate you're adding. The plate will get added if the web server "/img" folder has a .jpg file with the same name
 // Each plate on its own row
 
 addPlate(1);
@@ -23,6 +23,8 @@ addPlate(81);
 addPlate(99);
 addPlate(420);
 addPlate(666);
+addPlate(986);
+addPlate(987);
 addPlate(988);
 addPlate(989);
 addPlate(990);

@@ -46,4 +46,4 @@ function addPlate(number) {
 
 }
 
-window.onload(newNotif("Testi :D"));
+//window.onload(newNotif("Testi :D"));
