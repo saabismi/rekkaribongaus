@@ -23,8 +23,18 @@ while(counter < 1000) {
 function addPlate(number) {
 
     const elem = document.getElementById(number);
+    let protocol = window.location.protocol;
+    let hostname = window.location.hostname;
 
-    elem.setAttribute("src", "https://syvis.net/rekkarit/images/" + number + ".jpg");
+    if(protocol == "file:") {
+        hostname = "tammisaari.life";
+        protocol = "http:";
+    } else {
+        hostname = hostname;
+        protocol = protocol;
+    }
+
+    elem.setAttribute("src", `${protocol}//${hostname}/rekkarit/images/${number}.jpg`);
 
     let elemParent = elem.parentElement;
 
@@ -47,3 +57,7 @@ function addPlate(number) {
 }
 
 //window.onload(newNotif("Testi :D"));
+
+console.log("kakka");
+console.log(window.location.protocol);
+console.log(window.location.hostname);
