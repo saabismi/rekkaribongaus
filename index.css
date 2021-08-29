@@ -68,6 +68,7 @@ h1 a {
     z-index: 1;
     transition: background-color 0.3s ease;
     border: 3px solid #2248a2;
+    display:none;
 }
 
 /* List of all the plates that have been already added, can be found at the top of the page */

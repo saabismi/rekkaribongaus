@@ -21,3 +21,23 @@ function newNotif(text) {
     setTimeout(removeNotif, 3000);
 
 }
+
+const toTopBtn = document.getElementById("toTop");
+
+window.onscroll = function() {scrollDetector()};
+
+function scrollDetector() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTopBtn.style.display = "block";
+    } else {
+        toTopBtn.style.display = "none";
+    }
+}
+
+// Function for the "to top" button functionality
+function scrollToTop() {
+
+    document.body.scrollTop = 0; // for safari
+    document.documentElement.scrollTop = 0; // for chrome, firefox, etc.
+
+}
