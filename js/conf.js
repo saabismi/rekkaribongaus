@@ -37,6 +37,7 @@ addPlate(99);
 addPlate(100);
 addPlate(420);
 addPlate(666);
+addPlate(962);
 addPlate(963);
 addPlate(964);
 addPlate(965);
