@@ -1,3 +1,5 @@
+// Servun IP 207.180.196.31
+
 // Variable for getting the grid element for manipulation
 const grid = document.getElementById("grid");
 
@@ -27,8 +29,10 @@ function addPlate(number) {
     let hostname = window.location.hostname;
 
     if(protocol == "file:") {
-        hostname = "tammisaari.life";
+        hostname = "207.180.196.31";
         protocol = "http:";
+    } else if (hostname == "localhost" || hostname == "127.0.0.1") {
+        hostname = "207.180.196.31";
     } else {
         hostname = hostname;
         protocol = protocol;
