@@ -6,12 +6,14 @@ html {
     color:#fafafa;
 }
 
-/* set a margin for the main text */
+/* Set a margin for the whole body */
 body {
     margin:20px 50px;
 }
 
-/* My shitty old toast system, will be replaced later */
+  /* Notification system classes */
+/* My old notification system, will be replaced later */
+
 /* Container for notifications */
 #notificationContainer {
     height: auto;
@@ -40,6 +42,13 @@ body {
     text-align: center;
 }
 
+.displayNone {
+    display:none;
+}
+
+
+/* Main page layout stuff */
+
 /* Make the header 1 not bold */
 h1 {
     font-weight: normal;
@@ -49,6 +58,42 @@ h1 {
 h1 a {
     color:inherit;
     text-decoration: none;
+}
+
+/* A simple and small button */
+.simplebutton {
+    padding:5px;
+    background-color: #2248a2;
+    border-radius: 10px;
+    align-content: center;
+    max-height:15pt;
+    font-size: 12pt;
+    display:flex;
+}
+
+/* Change the background color and pointer on hover */
+.simplebutton:hover {
+    cursor: pointer;
+    background-color: #9eb6eb;
+}
+
+/* Flex container for the top menu items (page heading and "upload page" link */
+#topmenu {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Heading in the top of the page */
+#toptitle {
+    width:auto;
+    text-align: left;
+}
+
+/* Upload link button which takes you to upload and login page */
+#uploadLink {
+    width:auto;
+    float:right;
 }
 
 /* Button for returning back to the top of the page, this style is copied from another project of mine */
@@ -151,4 +196,18 @@ h1 a {
     .grid-item {
       width:100%;
     }
+}
+
+  /* Upload popup is the popup which contains the upload page. It's like over the main page*/
+  #uploadPopup {
+    visibility: hidden;  
+    width:80%;
+    height:80%;
+    background-color: #212121;
+    color:#fafafa;
+    border-radius: 15px;
+    border: 3px solid #79eade;
+    position:fixed;
+    z-index: 2;
+    padding:20px;
   }

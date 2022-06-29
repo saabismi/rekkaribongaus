@@ -13,6 +13,14 @@
  
   <body>
 
+    <!-- This is related to the feature which was supposed to allow file uploads but I dropped it for now
+    <div id="uploadPopup">
+      <h2>Uploadaa kuva rekkarista</h2>
+      <p>Huom. kuvan tulee olla JPG-muodossa.</p>
+      <input id="fileUpload" type="file" name="fileUpload">
+    </div>
+  -->
+
     <!-- My shitty old toast system-->
     <div id="notificationContainer">
       <!--<p class="notification">Nyt zoomaus päällä</p>
@@ -21,7 +29,11 @@
 
     <a onclick="scrollToTop()" id="toTop">⬆️</a>
 
-        <h1><a href="http:s//syvis.net/rekkarit">Rekkaribongaussivu</a></h1>
+        <nav id="topmenu">
+          <h1 id="toptitle"><a href="https://syvis.net/rekkarit">Rekkaribongaussivu</a></h1>
+          <a class="simplebutton" id="uploadLink">Upload</a>
+        </nav>
+        
 
         <div>
             <ul id="platelist">

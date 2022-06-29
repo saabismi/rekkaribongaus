@@ -62,6 +62,16 @@ function addPlate(number) {
 
 //window.onload(newNotif("Testi :D"));
 
-console.log("kakka");
+//console.log("kakka");
 console.log(window.location.protocol);
 console.log(window.location.hostname);
+
+/* This feature was supposed to allow uploading the photos directly in the browser but I dropped it for now because it was a bit too complex... :D
+const uploadLink = document.getElementById("uploadLink");
+uploadLink.addEventListener("click", openUploadPopup);
+
+function openUploadPopup() {
+    let uploadPopup = document.getElementById("uploadPopup");
+    uploadPopup.style = "visibility:inherit";
+}
+*/

@@ -1,15 +1,17 @@
-// my old shitty toast system
+// My old and kinda shitty notification system
 
 const notifCont = document.getElementById("notificationContainer");
 let notifications = document.getElementsByClassName("notification");
 
+//remove the latest notification
 function removeNotif() {
 
-    //notifCont.removeChild(notifCont.childNodes[0]);
+    notifCont.removeChild(notifCont.childNodes[0]);
     notifications[0].setAttribute("class", "displayNone");
 
 }
 
+// Create a new notification in the top of the page
 function newNotif(text) {
 
     //var text = prompt("Syötä tekstiä:");
@@ -21,6 +23,8 @@ function newNotif(text) {
     setTimeout(removeNotif, 3000);
 
 }
+
+/* A system for getting back to the top of the page quickly, not very sophisticated */
 
 const toTopBtn = document.getElementById("toTop");
 
