@@ -6,7 +6,7 @@ let notifications = document.getElementsByClassName("notification");
 //remove the latest notification
 function removeNotif() {
 
-    notifCont.removeChild(notifCont.childNodes[0]);
+    //notifCont.removeChild(notifCont.childNodes[0]);
     notifications[0].setAttribute("class", "displayNone");
 
 }
@@ -43,5 +43,6 @@ function scrollToTop() {
 
     document.body.scrollTop = 0; // for safari
     document.documentElement.scrollTop = 0; // for chrome, firefox, etc.
+    newNotif("Palasit sivun yläosaan.");
 
 }

@@ -28,7 +28,7 @@ body {
 
 /* Notification element */
 .notification {
-    background-color: #e2363a;
+    background-color: #1304c6;
     padding: 20px;
     border-radius: 15px;
     font-size: larger;
@@ -41,7 +41,7 @@ body {
     max-width: 300px;
     text-align: center;
 }
-
+/* This is used for hiding old notifications */
 .displayNone {
     display:none;
 }
@@ -49,8 +49,8 @@ body {
 
 /* Main page layout stuff */
 
-/* Make the header 1 not bold */
-h1 {
+/* Make the headers 1, 2, 3 not bold */
+h1, h2, h3 {
     font-weight: normal;
 }
 
@@ -58,6 +58,7 @@ h1 {
 h1 a {
     color:inherit;
     text-decoration: none;
+    font-size: 120%;
 }
 
 /* A simple and small button */
@@ -141,6 +142,11 @@ h1 a {
     border-radius: 10px;
     background-color: #212121;
     margin:5px;
+}
+
+/* Lighten the plate list number box on hover */
+#platelist li:hover {
+    background-color: #3d3d3d;
 }
 
 /* Remove default link styling in the platelist */
