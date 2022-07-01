@@ -39,6 +39,7 @@ function addPlate(number) {
     let textForPlateList = document.createTextNode(number); // create the textNode for housing the number
 
     createPlateListLink.setAttribute("href", "#" + number); // create a link which takes you to the element with the id containing the number
+    //createPlateListLink.setAttribute("onclick", newNotif("Näytetään rekkari " + number)); // I tried to get a notification to pop up when you click on a number link but for some reason the onclick is engaged every time the page loads
 
     createPlateListLink.appendChild(createPlateListItem); // append li to the a
     createPlateListItem.appendChild(textForPlateList); // append the text to the li
