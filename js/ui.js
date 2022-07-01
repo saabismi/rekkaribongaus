@@ -1,5 +1,4 @@
-// My old and kinda shitty notification system
-
+// My old notification system which deletes the notifications after 3 seconds. Not good but not bad.
 const notifCont = document.getElementById("notificationContainer");
 let notifications = document.getElementsByClassName("notification");
 
