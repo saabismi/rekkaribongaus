@@ -47,6 +47,28 @@ function addPlate(number) {
 
 }
 
+function getImgUrl(imgNumber) {
+    const image = new Image();
+    const urlBody = `${protocol}//${hostname}/rekkarit/images/${imgNumber}.`;
+    image.src = urlBody+"jpg";
+
+    if (image.complete) {
+        return urlBody+"jpg";
+    } else {
+        image.src = urlBody + "JPG";
+        if (image.complete) {
+            return urlBody + "JPG";
+        } else {
+            image.src = urlBody + "jpeg";
+            if (image.complete) {
+                return urlBody + "jpeg";
+            } else {
+                return "404";
+            }
+        }
+    }
+}
+
 // A function which tests if a certain number image exists in the server, takes one argument which is the number to check
 function imgExists(imgNum) {
 
@@ -59,6 +81,7 @@ function imgExists(imgNum) {
             console.log(imgNum + " was found"); // image number was found, log to console
             addPlate(imgNum); // ADD THE PLATE!! WOOHOO 
         } else if (request.status == 404) { // if the status is 404 (not found)
+            request.open('GET', `${protocol}//${hostname}/rekkarit/images/${imgNum}.JPG`, true);
             request.abort(); //abort mission, this works in a bad way
             console.log(imgNum + " aborted"); // announce that it is aborted
         }
