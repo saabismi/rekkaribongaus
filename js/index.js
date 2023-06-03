@@ -1,13 +1,13 @@
 // Servun IP 207.180.196.31
 
 // Variable for getting the grid element for manipulation
-//const grid = document.getElementById("grid");
+const grid = document.getElementById("grid");
 
 // A simple variable for creating the grid of 999 boxes
-//let counter = 1;
+let counter = 1;
 
 // Fill the grid with 999 boxes, each one has a number in itself, some have also a picture if it's added in conf.js
-/*while(counter < 1000) {
+while(counter < 1000) {
     let newDiv = document.createElement("DIV");
     let newImg = document.createElement("IMG");
     let newSpan = document.createElement("SPAN");
@@ -20,9 +20,9 @@
     grid.appendChild(newDiv);
     counter++;
 }
-*/
+
 // Function for adding a plate on the site, this handles everything as long as you have the image uploaded in the format X.jpg (note the jpg with lower case, and only jpg is allowed)
-/*function addPlate(number) {
+function addPlate(number) {
 
     const elem = document.getElementById(number);
     let protocol = window.location.protocol;
@@ -58,7 +58,7 @@
     createPlateListItem.appendChild(textForPlateList);
     plateList.appendChild(createPlateListLink);
 
-}*/
+}
 
 //window.onload(newNotif("Testi :D"));
 
